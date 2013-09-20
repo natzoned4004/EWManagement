@@ -1,5 +1,7 @@
 class ArtistsController < ApplicationController
-   
+  before_filter :is_logged_in?, 
+    only: [:new, :create, :edit, :update, :destroy]
+    
   def new
     @artist = Artist.new
   end
