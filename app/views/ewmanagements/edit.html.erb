@@ -1,0 +1,23 @@
+<h3>Update Company Info</h3>
+
+<%= form_for @company_info do |form| %>
+	<div>
+		<%= form.label :company_bio %>
+		<%= form.text_field :company_bio %>
+	</div>
+	<div>
+		<%= form.label :address %>
+		<%= form.text_field :address %>
+	</div>
+	<div>
+		<%= form.label :telephone_number %>
+		<%= form.text_field :telephone_number %>
+	</div>
+	<div>
+		<%= form.label :email %>
+		<%= form.text_field :email %>
+	</div>
+	<div>
+		<%= form.submit "Update Company Info" %>
+	</div>
+<% end %>

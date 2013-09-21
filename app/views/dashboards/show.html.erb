@@ -1,6 +1,14 @@
+<div>
+	<h3>Manage Artists</h3>
+	<%= link_to '+ Create a new Artist', new_artist_path %>
+	<%= render @artists %>
+</div>
 
-<h3>Manage Artists</h3>
-
-<%= link_to '+ Create a new Artist', new_artist_path %>
-
-<%= render @artists %>
+<div>
+	<h3>Manage Company Info</h3>
+	<%= link_to 'Edit General Company Information', edit_ewmanagement_path(1) %>
+	<p><%= @company_info.telephone_number  %></p>
+	<p><%= @company_info.address  %></p>
+	<p><%= @company_info.email  %></p>
+	<p><%= @company_info.company_bio  %></p>
+</div>
