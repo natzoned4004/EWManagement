@@ -109,5 +109,5 @@ label {
 	
 	#nav a:hover, #nav a:active { 
 		color: white;
-		background: url("../img/layout/nav_bg_h.png") repeat-x; 
+		background: url("layout/nav_bg_hover.png") repeat-x; 
 	}
