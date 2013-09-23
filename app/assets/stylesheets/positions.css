@@ -1,0 +1,154 @@
+/* XXXXXXXXXXXXXXXX Layout Positions XXXXXXXXXXXXXXXXXXXX */
+#main {
+	width: 960px;
+	padding: 0 10px 0 10px;
+	margin: 0 auto 0 auto;
+}
+
+#admin_nav {
+	width: 960px;
+	margin: 0 auto 0 auto;
+	padding: 5px 0 5px 0;
+}
+	#admin_nav .sign_out {
+		float: right;
+	}
+
+#content_container {
+	margin: 38px 0 38px 0;
+	padding: 50px 50px 50px 50px;
+}
+	.group:before,
+	.group:after {
+	    content: "";
+	    display: table;
+	} 
+	.group:after {
+	    clear: both;
+	}
+	.group {
+	    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+	}
+	
+#content { /* Container total width is 960-140=820 */
+	/* background: green; For Placement */
+	float: left;
+	width: 100%;
+}
+	#about_left {
+		float: left;
+		/* background: red; For Placement */
+		width: 278px;
+		padding-right: 30px;
+		border-right: 1px solid #848484;
+	}
+		#about_left p {
+			margin-bottom: 8px;
+		}
+		#about_left h1, #about_left img {
+			margin-bottom: 20px;
+		}
+		#about_left img {
+			width: 100%;
+		}
+
+	#about_right {
+		float: right;
+		/* background: yellow; For Placement */
+		/* padding-left: 30px; */
+		width: 511px;
+	}
+	.frame { margin-bottom: 20px; }
+
+/** HOME PAGE ONLY **/
+#bottom_case.fixed {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+/*
+----- Nav Position ----------------------------*/
+
+#nav_container {
+	border-bottom: 2px solid #333333;
+}
+
+	#nav {
+		width: 960px;
+		height: 70px;
+		padding: 0 10px 0 10px; /* Matches wrapper */
+		margin: 0 auto 0 auto;
+	}
+	
+	#nav ul {
+		list-style-type: none;
+	}
+	
+	#nav li { 
+		float: left;
+		width: 189px; /* Half a pixel off, (960-12)/5 */
+		height: 70px;
+		text-align: center;
+		margin: 0;
+		border-left: 1px solid black;
+	}
+	
+	#nav li:last-child a {
+		border-right: 1px solid black;
+	}
+	#nav li:last-child {
+		border-right: 1px solid #1f1f24;
+	}
+	
+	#nav a {
+		display: block;
+		line-height: 70px;
+		border-left: 1px solid #1f1f24;
+	}
+
+	#nav ul.subnav {
+		display: none;
+	}
+
+	#nav li:hover ul.subnav {
+		display: block;
+		position: relative;
+		left: 0px;
+		border: none;
+	}
+	
+	#nav li:hover ul.roster { bottom: 350px; } /* 70 for the original, then +70 per Musician */
+	#nav li:hover ul.updates { bottom: 280px; }
+	
+	#nav ul.subnav li {
+		border: none;
+	}
+	
+	#nav ul.subnav li a {
+		border: none;
+	}
+	
+/*
+----- Footer Position ----------------------------*/
+
+#footer {
+	width: 960px;
+	height: 189px; /** REMOVE THIS **/
+	padding: 36px 10px 36px 10px; /* Matches wrapper */
+	margin: 0 auto 0 auto;
+}
+	#footer h1 {
+		margin-bottom: 25px;
+	}
+	#footer p {
+		margin-bottom: 10px;
+	}
+	#footer #address {
+		margin-bottom: 36px;
+	}
+
+	#footer #col_1 {
+		width: 240px;
+	}

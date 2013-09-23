@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>EWManagement</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-	<div>
-	<% if signed_in? %>
-  		Signed in as: <%= link_to current_user.email, dashboard_path %>
-		<%= link_to 'Sign out', sign_out_path, :method => :delete %>
-    <% else %>
-      <%= link_to 'Sign in', sign_in_path %>
-    <% end %>
-	</div>
+	<head>
+		<title>E&W Management</title>
+		<%= google_webfonts_init(google: ['Oswald', 'Istok Web']) %>
+		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<%= render "layouts/admin_nav" %>
+		
+		<div id="main">
+			<%= image_tag "layout/ewmanagement_logo.png", alt: "E&W Management" %>
+			<div id="content_container" class="group">
+				<div id="content">
+					<%= yield %>
+				</div>
+			</div>
+		</div>
+		
 
-	<%= yield %>
+		
 
-</body>
+
+	</body>
 </html>

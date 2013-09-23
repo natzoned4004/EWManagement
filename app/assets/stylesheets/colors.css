@@ -1,0 +1,83 @@
+/* Application Color
+-------------------------------------------------------------- */
+
+html {
+	min-width: 980px;
+}
+
+body {
+	background: url("layout/main_bg.jpg") no-repeat fixed top center black;
+	background-size: 100%;
+}
+
+#admin_nav_container { background: black }
+#admin_nav {
+	color: white;
+}
+
+#content_container { background: url("layout/pane_bg.png"); }
+
+#nav_container { background: url("layout/nav_bg.png") repeat-x; }
+	#nav ul.subnav li { background: url("layout/nav_bg.png") repeat-x; }
+	
+#footer_container { background: url("layout/footer.jpg"); }
+
+/* Fonts and Text Color
+-------------------------------------------------------------- */
+/* @import url(http://fonts.googleapis.com/css?family=Oswald:300,400);
+@import url(http://fonts.googleapis.com/css?family=Istok+Web); */
+	
+h1 {
+	font-family: 'Oswald';
+	font-weight: 400;
+	color: white;
+	text-transform: uppercase;
+}
+
+label {
+	color: white;
+}
+
+#content h1 { font-size: 1.75em; }
+
+#content p {
+	color: #848484;
+	font-size: .8em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav {
+	text-transform: uppercase;
+	font-family: Arial;
+	font-size: .8em;
+}
+#footer {
+	text-transform: uppercase;
+	color: #707070;
+}
+
+#footer p {
+	font-family: 'Istok Web';
+	font-weight: 400;
+	font-size: .65em;
+}
+#footer span {
+	color: #bbbbbb;
+}
+
+#footer h1 { font-size: 1.2em; }
+
+	/* Links
+	-------------------------------------------------------------- */
+
+	a         { text-decoration: none;
+		 		color: white }
+	a:visited { color: white }
+	a:hover   { color: #E5001C }
+	a:active  { color: white }
+	
+	#nav a { color: white; }
+	#nav a:hover, #nav a:active { 
+		color: white;
+		background: url("../img/layout/nav_bg_h.png") repeat-x; 
+	}
