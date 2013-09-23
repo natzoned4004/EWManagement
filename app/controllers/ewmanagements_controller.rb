@@ -1,6 +1,10 @@
 class EwmanagementsController < ApplicationController
   before_filter :is_logged_in?, only: [:edit, :update]
   
+  def show
+    @company_info = get_EWManagement_info
+  end
+  
   def edit
     @company_info = get_EWManagement_info
   end

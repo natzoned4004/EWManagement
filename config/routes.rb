@@ -7,7 +7,7 @@ EWManagement::Application.routes.draw do
   resources :artists, only: [:new, :create, :show, 
                              :edit, :update, :destroy]
                              
-  resources :ewmanagements, only: [:edit, :update]
+  resources :ewmanagements, only: [:edit, :update, :show]
                              
   root to: 'clearance/sessions#new'
   
