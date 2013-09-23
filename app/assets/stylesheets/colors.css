@@ -69,18 +69,14 @@ label {
 	color: #707070;
 }
 
+#footer h1 { 
+	font-size: 1.2em; 
+}
+
 #footer p {
 	font-family: 'Istok Web';
 	font-weight: 400;
 	font-size: .65em;
-}
-
-#footer span {
-	color: #bbbbbb;
-}
-
-#footer h1 { 
-	font-size: 1.2em; 
 }
 
 	/* Links
