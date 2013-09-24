@@ -11,9 +11,10 @@
 
 <div>
 	<h1>Manage Company Info</h1>
-	<%= link_to 'Edit General Company Information', edit_ewmanagement_path(1) %>
-	<p><%= @company_info.telephone_number  %></p>
-	<p><%= @company_info.address  %></p>
-	<p><%= @company_info.email  %></p>
-	<p><%= @company_info.company_bio  %></p>
+	<%= link_to 'Edit General Company Information',
+		edit_company_path(@ew_management.id) %>
+	<p><%= @ew_management.telephone_number %></p>
+	<p><%= @ew_management.address %></p>
+	<p><%= @ew_management.email %></p>
+	<p><%= @ew_management.company_bio %></p>
 </div>

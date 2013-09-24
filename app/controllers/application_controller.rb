@@ -1,9 +1,6 @@
 class ApplicationController < ActionController::Base
   include Clearance::Controller
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
   before_filter :collect_artists, :collect_company_info
-  protect_from_forgery with: :exception
   
   private
   
@@ -12,7 +9,7 @@ class ApplicationController < ActionController::Base
   end
   
   def collect_company_info
-    @company_info = Ewmanagement.first
+    @ew_management = Company.first
   end
   
   def is_logged_in?

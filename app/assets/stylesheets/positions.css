@@ -129,7 +129,7 @@
 		border: none;
 	}
 	
-	#nav li:hover ul.roster { /* 70 for the original, then +70 per Musician */
+	#nav li:hover ul.artists { /* 70 for the original, then +70 per Musician */
 		bottom: 350px; 
 	}
 	
@@ -155,7 +155,7 @@
 	margin: 0 auto 0 auto;
 }
 
-	#footer #col_1 {
+	#footer #address_column {
 		width: 240px;
 	}
 
