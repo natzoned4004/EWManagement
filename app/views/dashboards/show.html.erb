@@ -1,4 +1,9 @@
 <div>
+	<h1><%= current_user.full_name %></h1>
+	<%= link_to 'Update Profile', edit_user_path(current_user) %>
+	<%= image_tag current_user.profile_picture.url %>
+</div>
+<div>
 	<h1>Manage Artists</h1>
 	<%= link_to '+ Create a new Artist', new_artist_path %>
 	<%= render @artists %>

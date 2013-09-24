@@ -1,6 +1,6 @@
 EWManagement::Application.routes.draw do
   
-  resource :users, controller: 'users'
+  resources :users, controller: 'users', only: [:edit, :update]
   
   resource :dashboard, only: [:show]
 

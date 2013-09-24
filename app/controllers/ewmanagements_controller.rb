@@ -3,6 +3,7 @@ class EwmanagementsController < ApplicationController
   
   def show
     @company_info = get_EWManagement_info
+    @erick_pic = User.find(3).profile_picture
   end
   
   def edit

@@ -1,0 +1,12 @@
+
+<%= form_for current_user do |form| %>
+	<%= form.label :first_name %>
+	<%= form.text_field :first_name%>
+	
+	<%= form.label :last_name %>
+	<%= form.text_field :last_name %>
+	
+	<%= form.file_field :profile_picture %>
+	
+	<%= form.submit "Update My Profile" %>
+<% end %>
