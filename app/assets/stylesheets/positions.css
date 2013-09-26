@@ -4,15 +4,30 @@
 	margin: 0 auto 0 auto;
 }
 
-#admin_nav {
-	width: 960px;
-	margin: 0 auto 0 auto;
-	padding: 5px 0 5px 0;
+#admin_nav_container.fixed {
+	top: 0;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	margin-bottom: 0;
+	width: 100%;
 }
 
-	#admin_nav .sign_out {
-		float: right;
+#admin-nav-clear {
+	height: 30px; /* Height of admin_nav_container (measured) */
+	width: 100%;
+}
+
+	#admin_nav {
+		width: 960px;
+		margin: 0 auto 0 auto;
+		padding: 5px 0 5px 0;
 	}
+
+		#admin_nav .sign_out {
+			float: right;
+		}
 
 #content_container {
 	margin: 38px 0 38px 0;

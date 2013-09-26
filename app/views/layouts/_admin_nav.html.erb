@@ -1,7 +1,9 @@
-<div id="admin_nav_container">
+<div id="admin-nav-clear">
+</div>
+<div id="admin_nav_container" class="fixed">
 	<div id="admin_nav">
 		<% if signed_in? %>
-	  		Welcome, <%= link_to current_user.first_name, dashboard_path %>
+	  		<span class="text">Welcome,</span> <%= link_to current_user.first_name, dashboard_path %>
 			<%= link_to 'Sign out', sign_out_path, class: "sign_out", :method => :delete %>
 	    <% else %>
 	      <%= link_to 'Sign in', sign_in_path %>
