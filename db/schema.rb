@@ -11,13 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130924233452) do
+ActiveRecord::Schema.define(version: 20130925235138) do
 
   create_table "artists", force: true do |t|
     t.string   "name"
     t.text     "bio"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "profile_picture_file_name"
+    t.string   "profile_picture_content_type"
+    t.integer  "profile_picture_file_size"
+    t.datetime "profile_picture_updated_at"
   end
 
   create_table "companies", force: true do |t|
