@@ -11,10 +11,10 @@ body {
 }
 
 .admin_nav_container { 
-	background: url("layout/pane_bg.png"); 
+	background: url("layout/nav_bg.png"); 
 }
 
-#content_container { 
+#content_container {
 	background: url("layout/pane_bg.png"); 
 }
 
@@ -44,10 +44,11 @@ label {
 	color: white;
 }
 
-#admin_nav .text {
+.admin_nav {
 	color: white;
-	font-size: 1em;
-	font-family: Helvetica, sans-serif;
+	font-size: .8em;
+	text-transform: uppercase;
+	font-family: Arial;
 }
 
 #content h1 { 
@@ -101,13 +102,13 @@ label {
 		color: white;
 	}
 	
-	#admin_nav a {
+	.admin_nav a {
 		color: white;
 		font-size: 1em;
-		font-family: Helvetica, sans-serif;
+		font-family: Arial;
 	}
 	
-	#admin_nav a:hover {
+	.admin_nav a:hover {
 		color: #E5001C;
 	}
 	

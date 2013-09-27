@@ -12,6 +12,7 @@
 	z-index: 1030;
 	margin-bottom: 0;
 	width: 100%;
+	border-bottom: 1px solid #333333;
 }
 
 .admin_nav_clear {
@@ -19,14 +20,13 @@
 	width: 100%;
 }
 
-
-#admin_nav {
+.admin_nav {
 	width: 960px;
 	margin: 0 auto 0 auto;
-	padding: 5px 0 5px 0;
+	padding: 8px 0 8px 0;
 }
-
-	#admin_nav .sign_out {
+	
+	.admin_nav .sign_out {
 		float: right;
 	}
 
