@@ -1,10 +1,18 @@
-<div id="footer_container">
-	<div id="footer">
-		<div id="address_column">
-			<h1>Address</h1>
-			<p><%= @ew_management.address %></p>
-			<p>Telephone: <%= @ew_management.telephone_number %></p>
-			<p><%= @ew_management.email %></p>
+<div id="bottom_container" 
+	<% if home? %>class="fixed"<%end%>>
+	
+	<%= render "layouts/main_nav" %>
+	
+	<% unless home? %>
+		<div id="footer_container">
+			<div id="footer">
+				<div id="address_column">
+					<h1>Address</h1>
+					<p><%= @ew_management.address %></p>
+					<p>Telephone: <%= @ew_management.telephone_number %></p>
+					<p><%= @ew_management.email %></p>
+				</div>
+			</div>
 		</div>
-	</div>
+	<% end %>
 </div>
