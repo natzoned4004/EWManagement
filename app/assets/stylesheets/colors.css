@@ -10,7 +10,7 @@ body {
 	background-size: 100%;
 }
 
-#admin_nav_container { 
+.admin_nav_container { 
 	background: url("layout/pane_bg.png"); 
 }
 
@@ -111,6 +111,29 @@ label {
 		color: #E5001C;
 	}
 	
+	a.action_link {
+		font-family: 'Oswald';
+		font-weight: 400;
+		font-size: 1.5em;
+		color: #848484;
+		text-transform: uppercase;
+	}
+	
+	a:hover.action_link {
+		color: #E5001C;
+	}
+	
+		a.boxed {
+			display: block;
+			text-align: center;
+			padding: 2px 0 2px 0;
+			border: 2px solid #848484;
+			margin: 15px 0 15px 0;
+		}
+		
+		a:hover.boxed {
+			border: 2px solid #E5001C;
+		}
 	
 	#nav a { 
 		color: white; 

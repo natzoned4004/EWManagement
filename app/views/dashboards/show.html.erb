@@ -1,20 +1,20 @@
-<div>
-	<h1><%= current_user.full_name %></h1>
-	<%= link_to 'Update Profile', edit_user_path(current_user) %>
+<div class='dashboard_left'>
+	<h1 class='dashboard_header top_header'><%= current_user.full_name %></h1>
 	<%= image_tag current_user.profile_picture.url %>
+	<%= render 'users/form_profile_picture' %>
+	<%= link_to '+ Add an Artist +', new_artist_path, class: 'action_link boxed' %>
+	<%= link_to 'Update Company Info',
+		edit_company_path(@ew_management.id), class: 'action_link boxed' %>
 </div>
-<div>
-	<h1>Manage Artists</h1>
-	<%= link_to '+ Create a new Artist', new_artist_path %>
-	<%= render @artists %>
-</div>
-
-<div>
-	<h1>Manage Company Info</h1>
-	<%= link_to 'Edit General Company Information',
-		edit_company_path(@ew_management.id) %>
+<div class='content_right dashboard_right'>
+	<h1 class='dashboard_header top_header centered'>Manage Artists</h1>
+	<span class='centered'>
+		<%= render @artists %>
+	</span>
+	
+	<h1 class='dashboard_header centered'>Manage Company Information</h1>
 	<p><%= @ew_management.telephone_number %></p>
 	<p><%= @ew_management.address %></p>
 	<p><%= @ew_management.email %></p>
-	<p><%= @ew_management.company_bio %></p>
+	<p class='company_bio'><%= @ew_management.company_bio %></p>
 </div>
