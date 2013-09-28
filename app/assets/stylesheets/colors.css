@@ -104,8 +104,8 @@ label {
 	
 	.admin_nav a {
 		color: white;
-		font-size: 1em;
-		font-family: Arial;
+		font-size: 1.5em;
+		font-family: 'Oswald';
 	}
 	
 	.admin_nav a:hover {
