@@ -1,0 +1,19 @@
+<%= form_for @artist do |form| %>
+	<div>
+		<%= form.label :name %>
+		<%= form.text_field :name %>
+	</div>
+	<div>
+		<%= form.label :youtube %>
+		<%= form.text_field :youtube_token %>
+		<p>Insert last 11 characters of video link.</p>
+	</div>
+	<div>
+		<%= form.label :bio %>
+		<%= form.text_field :bio %>
+	</div>
+	<div>
+		<%= form.file_field :profile_picture %>
+	</div>
+	<%= form.submit "Save Artist" %>
+<% end %>

@@ -3,6 +3,7 @@
 	<%= image_tag @erick.profile_picture.url %>
 </div>
 <div class="content_right">
-		<iframe class="frame" width="511" height="288" src="http://www.youtube.com/embed/asE3zMujh1w" frameborder="0" allowfullscreen></iframe>
-		<p><%= @ew_management.company_bio %></p>
+	<%= render 'layouts/youtube_video.html.erb', 
+		youtube_token: @ew_management.youtube_token %>
+	<p><%= @ew_management.company_bio %></p>
 </div>

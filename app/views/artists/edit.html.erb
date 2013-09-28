@@ -1,11 +1,1 @@
-<%= form_for @artist do |form| %>
-	<%= form.label :name %>
-	<%= form.text_field :name%>
-	
-	<%= form.label :bio %>
-	<%= form.text_field :bio %>
-	
-	<%= form.file_field :profile_picture %>
-	
-	<%= form.submit "Update Artist" %>
-<% end %>
+<%= render 'form' %>
