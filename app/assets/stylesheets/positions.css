@@ -4,6 +4,14 @@
 	margin: 0 auto 0 auto;
 }
 
+img.logo {
+	display: block;
+}
+
+.centered {
+	text-align: center;
+}
+
 .admin_nav_container.fixed {
 	position: fixed;
 	top: 0;
@@ -30,57 +38,33 @@
 		float: right;
 	}
 
-#content_container {
-	margin: 38px 0 38px 0;
-	padding: 50px 50px 50px 50px;
+.content_container {
+	text-align: center;
 }
 
-	.group:before, .group:after {
-	    content: "";
-	    display: table;
-	} 
-	
-	.group:after {
-	    clear: both;
-	}
-	
-	.group {
-	    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-	}
-	
-#content { /* Container total width is 960-140=820 */
-	/* background: green; For Placement */
-	float: left;
-	width: 100%;
+.content {
+	display: inline-block;
+	text-align: left;
+	margin: 38px 0 38px 0;
+	padding: 50px;
+}
+
+.content h1,
+.content img {
+	margin-bottom: 20px;
 }
 
 	.content_left {
-		float: left;
-		/* background: red; For Placement */
+		display: inline-block;
+		vertical-align: top;
 		width: 290px;
 		padding-right: 30px;
 		border-right: 1px solid #848484;
+		overflow: hidden;
 	}
-	
-	.centered {
-		text-align: center;
-	}
-	
-	.dashboard_left {
-		float: left;
-		width: 278px;
-		padding-right: 30px;
-	}
-		.dashboard_left img {
-			margin-bottom: 10px;
-		}
 	
 		.content_left p {
 			margin-bottom: 8px;
-		}
-		
-		.content_left h1, .content_left img {
-			margin-bottom: 20px;
 		}
 		
 		.content_left img {
@@ -88,33 +72,24 @@
 		}
 
 	.content_right {
-		float: right;
-		width: 511px;
+		display: inline-block;
+		vertical-align: top;
+		padding-left: 30px;
+		width: 505px;
 	}
 	
-	.dashboard_right {
-		padding-left: 40px;
-		border-left: 1px solid #848484;
-	}
-	
-	.dashboard_header {
-		margin: 20px 0 20px 0;
-	}
-	
-	.dashboard_right .company_bio {
+	.company_bio {
 		margin-top: 10px;
 	}
 	
-	.top_header {
-		margin-top: 0px;
-		margin-bottom: 20px;
+	.header_list {
+		margin: 20px 0 20px 0;
 	}
 	
 	.frame { 
 		margin-bottom: 20px; 
 	}
 
-/** HOME PAGE ONLY **/
 #bottom_container.fixed {
 	position: fixed;
 	bottom: 0px;

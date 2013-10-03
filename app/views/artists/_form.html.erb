@@ -1,19 +1,14 @@
 <%= form_for @artist do |form| %>
-	<div>
-		<%= form.label :name %>
-		<%= form.text_field :name %>
+			<%= form.text_field :name, placeholder: "Name" %>
+			<%= form.file_field :profile_picture %>
+			<%= image_tag @artist.profile_picture.url %>
+		<%= form.submit "Save Artist", class: "submit-artist" %>
 	</div>
-	<div>
-		<%= form.label :youtube %>
-		<%= form.text_field :youtube_token %>
-		<p>Insert last 11 characters of video link.</p>
+	<div class="content_right">
+			<%= render 'layouts/youtube_video.html.erb', 
+				youtube_token: @artist.youtube_token %>
+			<%= form.text_field :youtube_token, placeholder: "Youtube Token" %>
+			<%= form.label "Insert last 11 characters of video link" %>
+			<%= form.text_area :bio, placeholder: "Bio", rows: "14" %>
 	</div>
-	<div>
-		<%= form.label :bio %>
-		<%= form.text_field :bio %>
-	</div>
-	<div>
-		<%= form.file_field :profile_picture %>
-	</div>
-	<%= form.submit "Save Artist" %>
 <% end %>

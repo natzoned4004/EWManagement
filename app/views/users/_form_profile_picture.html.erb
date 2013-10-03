@@ -1,4 +1,5 @@
 <%= form_for current_user do |form| %>
 	<%= form.file_field :profile_picture %>
-	<%= form.submit "Update Picture" %>
+	<%= image_tag current_user.profile_picture.url %>
+	<%= form.submit "Update Picture", class: "submit-profile-picture" %>
 <% end %>

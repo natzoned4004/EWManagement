@@ -14,12 +14,12 @@ body {
 	background: url("layout/nav_bg.png"); 
 }
 
-#content_container {
+.content {
 	background: url("layout/pane_bg.png"); 
 }
 
 #nav_container { 
-	background: url("layout/nav_bg.png") repeat-x; 
+	background: url("layout/nav_bg.png") repeat-x;
 }
 
 	#nav ul.subnav li { 
@@ -34,14 +34,11 @@ body {
 -------------------------------------------------------------- */
 	
 h1 {
+	font-size: 1.75em;
 	font-family: 'Oswald';
 	font-weight: 400;
 	color: white;
 	text-transform: uppercase;
-}
-
-label {
-	color: white;
 }
 
 .admin_nav {
@@ -51,11 +48,11 @@ label {
 	font-family: Arial;
 }
 
-#content h1 { 
+h1 { 
 	font-size: 1.75em; 
 }
 
-#content p {
+p {
 	color: #848484;
 	font-size: .8em;
 	font-family: Arial, Helvetica, sans-serif;

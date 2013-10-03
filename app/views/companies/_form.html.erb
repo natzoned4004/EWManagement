@@ -1,0 +1,18 @@
+<%= form_for @ew_management do |form| %>
+	<div class="content_left">
+		<h1>Company Information</h1>
+		<%= form.text_field :name, placeholder: "Name" %>
+		<%= form.text_field :telephone_number, 
+			placeholder: "Telephone Number" %>
+		<%= form.text_field :address, placeholder: "Street Address" %>
+		<%= form.text_field :email, placeholder: "Email" %>
+		<%= form.submit "Update" %>
+	</div>
+	<div class="content_right">
+		<%= render 'layouts/youtube_video.html.erb', 
+			youtube_token: @ew_management.youtube_token %>
+		<%= form.text_field :youtube_token, placeholder: "Youtube Token" %>
+		<%= form.label "Insert last 11 characters of video link" %>
+		<%= form.text_area :company_bio, placeholder: "Bio", rows: "14" %>
+	</div>
+<% end %>

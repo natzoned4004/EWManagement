@@ -1,0 +1,75 @@
+.form {
+	text-align: center;
+}
+
+label {
+	color: #848484;
+}
+
+input {
+	color: #848484;
+	background: none; 
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+	border: 1px solid #333;
+}
+
+.edit_company .content_left input {
+	width: 270px;
+}
+
+.dashboard input {
+	color: #848484;
+	background: none; 
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+	border: 1px solid #333;
+}
+
+input[type="file"] {
+	width: 100%;
+	background: none;
+	border: none;
+}
+
+.submit-artist[type="submit"] {
+	width: 100%;
+	font-family: 'Oswald';
+	font-weight: 400;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	border: 2px solid #848484;
+}
+
+.submit-profile-picture[type="submit"],
+.edit_company input[type="submit"] {
+	font-family: 'Oswald';
+	font-weight: 400;
+	font-size: 1.5em;
+	color: #848484;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 2px 0 2px 0;
+	border: 2px solid #848484;
+	margin: 0;
+}
+
+input[type="submit"]:hover {
+	color: #E5001C;
+	border: 2px solid #E5001C;
+}
+
+textarea {
+	color: #848484;
+	resize: none;
+	width: 100%;
+	background: none;
+	font-size: 16px;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+	border: 1px solid #333;
+}

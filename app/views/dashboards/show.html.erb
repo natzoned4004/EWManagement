@@ -1,18 +1,16 @@
-<div class='dashboard_left'>
+<div class='content_left dashboard'>
 	<h1 class='dashboard_header top_header'><%= current_user.full_name %></h1>
-	<%= image_tag current_user.profile_picture.url %>
 	<%= render 'users/form_profile_picture' %>
 	<%= link_to '+ Add an Artist +', new_artist_path, class: 'action_link boxed' %>
 	<%= link_to 'Update Company Info',
 		edit_company_path(@ew_management.id), class: 'action_link boxed' %>
 </div>
-<div class='content_right dashboard_right'>
-	<h1 class='dashboard_header top_header centered'>Manage Artists</h1>
+<div class='content_right'>
+	<h1 class='centered'>Manage Artists</h1>
 	<span class='centered'>
 		<%= render @artists %>
 	</span>
-	
-	<h1 class='dashboard_header centered'>Manage Company Information</h1>
+	<h1 class='header_list centered'>Manage Company Information</h1>
 	<p><%= @ew_management.telephone_number %></p>
 	<p><%= @ew_management.address %></p>
 	<p><%= @ew_management.email %></p>
