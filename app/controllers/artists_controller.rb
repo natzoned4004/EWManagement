@@ -39,6 +39,7 @@ class ArtistsController < ApplicationController
   end
   
   def artist_params
-    params.require(:artist).permit(:name, :bio, :profile_picture, :youtube_token)
+    params.require(:artist).permit(:name, :bio, :profile_picture,
+     :youtube_token, :soundcloud_widget)
   end
 end

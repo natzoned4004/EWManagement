@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130928045810) do
+ActiveRecord::Schema.define(version: 20131005004326) do
 
   create_table "artists", force: true do |t|
     t.string   "name"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20130928045810) do
     t.integer  "profile_picture_file_size"
     t.datetime "profile_picture_updated_at"
     t.string   "youtube_token"
+    t.string   "soundcloud_widget"
   end
 
   create_table "companies", force: true do |t|

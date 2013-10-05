@@ -6,4 +6,5 @@
 <div class="content_right">
 	<%= render 'layouts/youtube_video.html.erb', 
 		youtube_token: @artist.youtube_token %>
+	<%= raw @artist.soundcloud_widget %>
 </div>
