@@ -14,5 +14,5 @@
 	<p><%= @ew_management.telephone_number %></p>
 	<p><%= @ew_management.address %></p>
 	<p><%= @ew_management.email %></p>
-	<p class='company_bio'><%= @ew_management.company_bio %></p>
+	<%= simple_format(@ew_management.company_bio) %>
 </div>

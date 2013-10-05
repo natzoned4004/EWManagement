@@ -6,5 +6,5 @@
 <div class="content_right">
 	<%= render 'layouts/youtube_video.html.erb', 
 		youtube_token: @ew_management.youtube_token %>
-	<p class="company_bio"><%= @ew_management.company_bio %></p>
+	<%= simple_format(@ew_management.company_bio) %>
 </div>
