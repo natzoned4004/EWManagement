@@ -15,6 +15,9 @@ class StaticPagesController < ApplicationController
     redirect_to dashboard_path
   end
   
+  def home
+  end
+  
   private
   
   def find_page
@@ -24,6 +27,6 @@ class StaticPagesController < ApplicationController
   def page_params
     params.require(:static_page).
       permit(:permalink, :company_bio, :address, :telephone_number,
-        :email, :name, :youtube_token, :erick_pic, :michael_pic)
+        :email, :company_name, :youtube_token, :erick_pic, :michael_pic)
   end
 end

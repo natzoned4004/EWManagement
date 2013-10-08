@@ -3,7 +3,5 @@ EWManagement::Application.routes.draw do
                              :edit, :update, :destroy]
   resource :dashboard, only: [:show]
   resources :static_pages, only: [:show, :edit, :update]
-  resources :users, controller: 'users', only: [:edit, :update]
-  
   root to: 'static_pages#home'
 end
