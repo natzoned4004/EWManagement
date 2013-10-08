@@ -3,7 +3,6 @@ class DashboardsController < ApplicationController
   
   def show
     @artists = Artist.all
-    @company_info = Company.first
   end
 
 end

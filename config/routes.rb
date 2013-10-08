@@ -2,7 +2,8 @@ EWManagement::Application.routes.draw do
   resources :artists, only: [:new, :create, :show,
                              :edit, :update, :destroy]
   resource :dashboard, only: [:show]
-  resources :companies, only: [:edit, :update, :show]
+  resources :static_pages, only: [:show, :edit, :update]
   resources :users, controller: 'users', only: [:edit, :update]
+  
   root to: 'static_pages#home'
 end

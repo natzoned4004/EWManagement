@@ -1,18 +1,23 @@
-<%= form_for @ew_management do |form| %>
+<%= form_for @page do |form| %>
 	<div class="content_left">
 		<h1>Company Information</h1>
-		<%= form.text_field :name, placeholder: "Name" %>
-		<%= form.text_field :telephone_number, 
+		<%= form.text_field :company_name, placeholder: "Name" %>
+		<%= form.text_field :permalink, placeholder: "Permalink" %>
+		<%= form.text_field :telephone_number,
 			placeholder: "Telephone Number" %>
 		<%= form.text_field :address, placeholder: "Street Address" %>
 		<%= form.text_field :email, placeholder: "Email" %>
-		<%= form.submit "Update" %>
+		<%= form.file_field :erick_pic %>
+		<%= image_tag @page.erick_pic.url %>
+		<%= form.file_field :michael_pic %>
+		<%= image_tag @page.michael_pic.url %>
 	</div>
 	<div class="content_right">
 		<%= render 'layouts/youtube_video.html.erb', 
-			youtube_token: @ew_management.youtube_token %>
+			youtube_token: @page.youtube_token %>
 		<%= form.text_field :youtube_token, placeholder: "Youtube Token" %>
 		<%= form.label "Insert last 11 characters of video link" %>
 		<%= form.text_area :company_bio, placeholder: "Bio", rows: "14" %>
+		<%= form.submit "Update" %>
 	</div>
 <% end %>

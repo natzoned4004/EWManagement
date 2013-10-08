@@ -16,7 +16,7 @@ input {
 	border: 1px solid #333;
 }
 
-.edit_company .content_left input {
+.edit_static_page .content_left input {
 	width: 270px;
 }
 
@@ -46,7 +46,7 @@ input[type="file"] {
 }
 
 .submit-profile-picture[type="submit"],
-.edit_company input[type="submit"] {
+.edit_static_page input[type="submit"] {
 	font-family: 'Oswald';
 	font-weight: 400;
 	font-size: 1.5em;

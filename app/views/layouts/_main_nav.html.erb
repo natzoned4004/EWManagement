@@ -2,7 +2,7 @@
 	<div id="nav">
 		<ul id="nav_list">
 			<li><%= link_to "Home", root_path %></li>
-			<li><%= link_to "About", company_path(@ew_management.id) %></li>
+			<li><%= link_to "About", static_page_path(@about.id) %></li>
 			<li>
 				<%= link_to "Artists" %>
 				<%= render "artists/artist_nav" %>

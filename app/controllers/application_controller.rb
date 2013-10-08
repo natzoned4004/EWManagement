@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   end
   
   def collect_company_info
-    @ew_management = Company.first
+    @about = StaticPage.first
   end
   
   def is_logged_in?
