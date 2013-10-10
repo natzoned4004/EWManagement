@@ -46,7 +46,9 @@ input[type="file"] {
 }
 
 .submit-profile-picture[type="submit"],
-.edit_static_page input[type="submit"] {
+.edit_static_page input[type="submit"],
+.sign_in input[type="submit"],
+.sign-up input[type="submit"] {
 	font-family: 'Oswald';
 	font-weight: 400;
 	font-size: 1.5em;
@@ -76,4 +78,22 @@ textarea {
 	margin-bottom: 15px;
 	padding: 7px 9px;
 	border: 1px solid #333;
+}
+
+.sign_in,
+.sign-up {
+	width: 200px;
+}
+
+.sign_in input[type="email"],
+.sign_in input[type="password"],
+.sign-up input[type='email'],
+.sign-up input[type="password"] {
+	width: 90%;
+	border: 2px solid #333;
+}
+
+.sign_in .other-links,
+.sign-up .other-links {
+	margin-top: 10px;
 }

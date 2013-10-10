@@ -1,0 +1,515 @@
+/* --------------------------------------------------------------
+
+   reset.css
+   * Resets default browser CSS.
+
+-------------------------------------------------------------- */
+
+
+html {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* This helps to make newer HTML5 elements behave like DIVs in older browers */
+article, aside, details, figcaption, figure, dialog,
+footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+/* Line-height should always be unitless! */
+body {
+  line-height: 1.5;
+  background: white;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+/* float:none prevents the span-x classes from breaking table-cell display */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float:none !important;
+}
+table, th, td {
+  vertical-align: middle;
+}
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ''; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img { border: none; }
+
+/* Remember to define your own focus styles! */
+:focus { outline: 0; }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+*/
+/* Application Color
+-------------------------------------------------------------- */
+
+
+html {
+	min-width: 980px;
+}
+
+body {
+	background: url("layout/main_bg.jpg") no-repeat fixed top center black;
+	background-size: 100%;
+}
+
+.admin_nav_container { 
+	background: url("layout/nav_bg.png"); 
+}
+
+.content {
+	background: url("layout/pane_bg.png"); 
+}
+
+#nav_container { 
+	background: url("layout/nav_bg.png") repeat-x;
+}
+
+	#nav ul.subnav li { 
+		background: url("layout/nav_bg.png") repeat-x; 
+	}
+	
+#footer_container { 
+	background: url("layout/footer.jpg"); 
+}
+
+/* Fonts and Text Color
+-------------------------------------------------------------- */
+	
+h1 {
+	font-size: 1.75em;
+	font-family: 'Oswald';
+	font-weight: 400;
+	color: white;
+	text-transform: uppercase;
+}
+
+.admin_nav {
+	color: white;
+	font-size: .8em;
+	text-transform: uppercase;
+	font-family: Arial;
+}
+
+h1 { 
+	font-size: 1.75em; 
+}
+
+p {
+	color: #848484;
+	font-size: .8em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav {
+	text-transform: uppercase;
+	font-family: Arial;
+	font-size: .8em;
+}
+
+#footer {
+	text-transform: uppercase;
+	color: #707070;
+}
+
+#footer h1 { 
+	font-size: 1.2em; 
+}
+
+#footer p {
+	font-family: 'Istok Web';
+	font-weight: 400;
+	font-size: .65em;
+}
+
+	/* Links
+	-------------------------------------------------------------- */
+
+	a { 
+		text-decoration: none;
+		color: white;
+	}
+	
+	a:visited { 
+		color: white;
+	}
+	
+	a:hover   { 
+		color: #E5001C;
+	}
+	
+	a:active  { 
+		color: white;
+	}
+	
+	.admin_nav a {
+		color: white;
+		font-size: 1.5em;
+		font-family: 'Oswald';
+	}
+	
+	.admin_nav a:hover {
+		color: #E5001C;
+	}
+	
+	a.action_link {
+		font-family: 'Oswald';
+		font-weight: 400;
+		font-size: 1.5em;
+		color: #848484;
+		text-transform: uppercase;
+	}
+	
+	a:hover.action_link {
+		color: #E5001C;
+	}
+	
+		a.boxed {
+			display: block;
+			text-align: center;
+			padding: 2px 0 2px 0;
+			border: 2px solid #848484;
+			margin: 15px 0 15px 0;
+		}
+		
+		a:hover.boxed {
+			border: 2px solid #E5001C;
+		}
+	
+	#nav a { 
+		color: white; 
+	}
+	
+	#nav a:hover, #nav a:active { 
+		color: white;
+		background: url("layout/nav_bg_hover.png") repeat-x; 
+	}
+.form {
+	text-align: center;
+}
+
+label {
+	color: #848484;
+}
+
+input {
+	color: #848484;
+	background: none; 
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+	border: 1px solid #333;
+}
+
+.edit_static_page .content_left input {
+	width: 270px;
+}
+
+.dashboard input {
+	color: #848484;
+	background: none; 
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+	border: 1px solid #333;
+}
+
+input[type="file"] {
+	width: 100%;
+	background: none;
+	border: none;
+}
+
+.submit-artist[type="submit"] {
+	width: 100%;
+	font-family: 'Oswald';
+	font-weight: 400;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	border: 2px solid #848484;
+}
+
+.submit-profile-picture[type="submit"],
+.edit_static_page input[type="submit"],
+.sign_in input[type="submit"],
+.sign-up input[type="submit"] {
+	font-family: 'Oswald';
+	font-weight: 400;
+	font-size: 1.5em;
+	color: #848484;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 2px 0 2px 0;
+	border: 2px solid #848484;
+	margin: 0;
+}
+
+input[type="submit"]:hover {
+	color: #E5001C;
+	border: 2px solid #E5001C;
+}
+
+#artist_soundcloud_widget {
+	width: 96%;
+}
+
+textarea {
+	color: #848484;
+	resize: none;
+	width: 100%;
+	background: none;
+	font-size: 16px;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+	border: 1px solid #333;
+}
+
+.sign_in,
+.sign-up {
+	width: 200px;
+}
+
+.sign_in input[type="email"],
+.sign_in input[type="password"],
+.sign-up input[type='email'],
+.sign-up input[type="password"] {
+	width: 90%;
+	border: 2px solid #333;
+}
+
+.sign_in .other-links,
+.sign-up .other-links {
+	margin-top: 10px;
+}
+#main {
+	width: 960px;
+	padding: 0 10px 0 10px;
+	margin: 0 auto 0 auto;
+}
+
+img.logo {
+	display: block;
+}
+
+.centered {
+	text-align: center;
+}
+
+.admin_nav_container.fixed {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	margin-bottom: 0;
+	width: 100%;
+	border-bottom: 1px solid #333333;
+}
+
+.admin_nav_clear {
+	height: 36px; /* Height of admin_nav_container (measured) */
+	width: 100%;
+}
+
+.admin_nav {
+	width: 960px;
+	margin: 0 auto 0 auto;
+	padding: 8px 0 8px 0;
+}
+	
+	.admin_nav .sign_out {
+		float: right;
+	}
+
+.content_container {
+	text-align: center;
+}
+
+.content {
+	display: inline-block;
+	text-align: left;
+	margin: 38px 0 38px 0;
+	padding: 50px;
+}
+
+.content h1,
+.content img {
+	margin-bottom: 20px;
+}
+
+	.content_left {
+		display: inline-block;
+		vertical-align: top;
+		width: 290px;
+		padding-right: 30px;
+		border-right: 1px solid #848484;
+		overflow: hidden;
+	}
+	
+		.content_left p {
+			margin-bottom: 8px;
+		}
+		
+		.content_left img {
+			width: 100%;
+		}
+
+	.content_right {
+		display: inline-block;
+		vertical-align: top;
+		padding-left: 30px;
+		width: 505px;
+	}
+	
+	.content_right p {
+		margin-bottom: 10px;
+	}
+	
+	.header_list {
+		margin: 20px 0 20px 0;
+	}
+	
+	.frame { 
+		margin-bottom: 20px; 
+	}
+
+#bottom_container.fixed {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+/*
+----- Nav Position ----------------------------*/
+
+#nav_container {
+	border-bottom: 2px solid #333333;
+}
+
+	#nav {
+		width: 960px;
+		height: 70px;
+		padding: 0 10px 0 10px; /* Matches wrapper */
+		margin: 0 auto 0 auto;
+	}
+	
+	#nav ul {
+		list-style-type: none;
+	}
+	
+	#nav li { 
+		float: left;
+		width: 189px; /* Half a pixel off, (960-12)/5 */
+		height: 70px;
+		text-align: center;
+		margin: 0;
+		border-left: 1px solid black;
+	}
+	
+	#nav li:last-child a {
+		border-right: 1px solid black;
+	}
+	
+	#nav li:last-child {
+		border-right: 1px solid #1f1f24;
+	}
+	
+	#nav a {
+		display: block;
+		line-height: 70px;
+		border-left: 1px solid #1f1f24;
+	}
+
+	#nav ul.subnav {
+		display: none;
+	}
+
+	#nav li:hover ul.subnav {
+		display: block;
+		position: relative;
+		left: 0px;
+		border: none;
+	}
+	
+	#nav li:hover ul.artists { /* 70 for the original, then +70 per Musician */
+		bottom: 350px; 
+	}
+	
+	#nav li:hover ul.updates { 
+		bottom: 280px; 
+	}
+	
+	#nav ul.subnav li {
+		border: none;
+	}
+	
+	#nav ul.subnav li a {
+		border: none;
+	}
+	
+/*
+----- Footer Position ----------------------------*/
+
+#footer {
+	width: 960px;
+	height: 189px; /** REMOVE THIS **/
+	padding: 36px 10px 36px 10px; /* Matches wrapper */
+	margin: 0 auto 0 auto;
+}
+
+	#footer #address_column {
+		width: 240px;
+	}
+
+	#footer h1 {
+		margin-bottom: 25px;
+	}
+	
+	#footer p {
+		margin-bottom: 10px;
+	}
+	
+	#footer #address {
+		margin-bottom: 36px;
+	}
