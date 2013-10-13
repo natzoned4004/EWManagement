@@ -1,0 +1,11 @@
+<div class='admin-action'>
+	<%=
+		if edit_artist?
+			link_to 'Delete Artist',
+				artist_path(@artist.id), 
+				method: :delete,
+				confirm: "Are you sure you would like to erase #{@artist.name}? This action cannot be undone.",
+				class: 'delete-artist'
+		end
+	%>
+</div>

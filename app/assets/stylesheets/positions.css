@@ -37,6 +37,11 @@ img.logo {
 	.admin_nav .sign_out {
 		float: right;
 	}
+	
+	.admin_nav .admin-action {
+		display: inline-block;
+		margin-left: 320px;
+	}
 
 .content_container {
 	text-align: center;
