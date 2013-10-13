@@ -149,10 +149,6 @@ img.logo {
 		border: none;
 	}
 	
-	#nav li:hover ul.artists { /* 70 for the original, then +70 per Musician */
-		bottom: 350px; 
-	}
-	
 	#nav li:hover ul.updates { 
 		bottom: 280px; 
 	}
