@@ -1,9 +1,9 @@
 <div id="bottom_container" 
-	<% if home? %>class="fixed"<% end %>>
+	<% if fixed_footer? %>class="fixed"<% end %>>
 	
 	<%= render "layouts/main_nav" %>
 	
-	<% unless home? %>
+	<% unless fixed_footer? %>
 		<div id="footer_container">
 			<div id="footer">
 				<div id="address_column">
