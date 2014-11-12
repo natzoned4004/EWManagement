@@ -155,7 +155,7 @@ img.logo {
 	}
 	
 	#nav li:hover ul.updates { 
-		bottom: 280px; 
+		bottom: 210px; /* Number of tabs + 1 */
 	}
 	
 	#nav ul.subnav li {
